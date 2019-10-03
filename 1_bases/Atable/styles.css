@@ -43,3 +43,23 @@ footer {
     margin-bottom: 8px;
     outline: 1px solid black;
 }
+
+table tr :first-child {
+    width: 18.5%;
+}
+
+table tr :nth-child(2n) {
+    width: 26%;
+}
+
+table tr :nth-child(3n) {
+    width: 55.5%;
+}
+
+table tr :nth-child(4n) {
+    width: 44.8%;
+}
+
+table tr :last-child {
+    width: 29.6%;
+}
