@@ -11,7 +11,7 @@
     flex-direction: row;
     width: 100%;
     margin: 25px;
-    list-style: none;
+    list-style-type: none;
 }
 
 #menu a {
