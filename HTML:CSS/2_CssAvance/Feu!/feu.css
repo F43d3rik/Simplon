@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width : 120px;
+    height: 320px;
+    margin: auto;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    background-color: rgb(27, 27, 27);
+    border-radius: 5px;
+}
+
+div {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50%;
+    flex-wrap: nowrap;
+    box-shadow: inset 1px 1px 6px black;
+    background-color: rgb(48, 48, 48);
+}
+
+section :nth-child(1):hover {
+    background-color: red;
+}
+
+section :nth-child(2):hover {
+    background-color: orange;
+}
+
+section :nth-child(3):hover {
+    background-color: green;
+}
