@@ -1,12 +1,18 @@
 * {
     margin: 0px;
     padding: 0px;
+    background-color: beige;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    width : 120px;
+    width: 120px;
     height: 320px;
     margin: auto;
     margin-top: 50vh;
@@ -25,14 +31,119 @@ div {
     background-color: rgb(48, 48, 48);
 }
 
-section :nth-child(1):hover {
+/* Dessin seul*/
+
+main :nth-child(1) :nth-child(1) {
     background-color: red;
 }
 
-section :nth-child(2):hover {
+main :nth-child(1) :nth-child(2) {
     background-color: orange;
 }
 
-section :nth-child(3):hover {
+main :nth-child(1) :nth-child(3) {
     background-color: green;
+}
+
+/* Sequence hover */
+
+main :nth-child(2) :nth-child(1):hover {
+    background-color: red;
+}
+
+main :nth-child(2) :nth-child(2):hover {
+    background-color: orange;
+}
+
+main :nth-child(2) :nth-child(3):hover {
+    background-color: green;
+}
+
+/* Animations */
+
+main :nth-child(3) :nth-child(1) {
+    animation: redwait 10s linear infinite;
+}
+
+main :nth-child(3) :nth-child(2) {
+    animation: orangewait 10s linear infinite;
+}
+
+main :nth-child(3) :nth-child(3) {
+    animation: greenwait 10s linear infinite;
+}
+
+main :nth-child(4) :nth-child(1) {
+    animation: redwait2 10s linear infinite;
+}
+
+main :nth-child(4) :nth-child(2) {
+    animation: orangewait2 10s linear infinite;
+}
+
+main :nth-child(4) :nth-child(3) {
+    animation: greenwait2 10s linear infinite;
+}
+
+@keyframes redwait {
+    0%, 38% {
+        background-color: red;
+    }
+    40%, 100% {
+        background-color: rgb(48, 48, 48);
+    }
+}
+
+@keyframes redwait2 {
+    0%, 60% {
+        background-color: rgb(48, 48, 48);
+    }
+    62%, 100% {
+        background-color: red;
+    }
+}
+
+@keyframes orangewait {
+    0%, 38% {
+        background-color: rgb(48, 48, 48);
+    }
+    40%, 80% {
+        background-color: rgb(48, 48, 48);
+    }
+    82%, 100% {
+        background-color: orange;
+    }
+}
+
+@keyframes orangewait2 {
+    0%, 38% {
+        background-color: rgb(48, 48, 48);
+    }
+    40%, 60% {
+        background-color: orange;
+    }
+    62%, 100% {
+        background-color: rgb(48, 48, 48);
+    }
+}
+
+@keyframes greenwait {
+    0%, 38% {
+        background-color: rgb(48, 48, 48);
+    }
+    40%, 80% {
+        background-color: green;
+    }
+    82%, 100% {
+        background-color: rgb(48, 48, 48);
+    }
+}
+
+@keyframes greenwait2 {
+    0%, 38% {
+        background-color: green;
+    }
+    40%, 100% {
+        background-color: rgb(48, 48, 48);
+    }
 }
