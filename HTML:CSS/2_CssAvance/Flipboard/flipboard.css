@@ -79,8 +79,4 @@ section {
     h1, h2, p {
         font-size: 80%;
     }
-
-    .back {
-        transform: rotateY(180deg);
-    }
 }
