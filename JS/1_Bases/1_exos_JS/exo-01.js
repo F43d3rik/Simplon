@@ -25,5 +25,5 @@ main.appendChild(div2);
 div2.style.margin = "50px";
 main.style.display="flex";
 
-// Changement de l'ordre d'alignement (cas échéant):
+// Changement de l'ordre des div(s) (cas échéant):
 // main.style.flexDirection="row-reverse";
