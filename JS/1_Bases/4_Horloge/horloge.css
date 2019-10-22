@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+* {
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+section {
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+h1 {
+    margin: 20px;
+    color: rgba(216, 216, 216, 0.425);
+    text-align: center;
+}
+
+.cadran {
+    position: relative;
+    width: 20em;
+    height: 20em;
+    margin: auto;
+    border: 10px double rgba(216, 216, 216, 0.26);
+    ;
+    border-radius: 50%;
+}
+
+.cadran:after {
+    background-color: black;
+    border: 10px double rgba(216, 216, 216, 0.26);
+    ;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 3%;
+    height: 3%;
+}
+
+.container {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#heure, #minute, #trotteuse {
+    position: absolute;
+}
+
+#heure {
+    background: rgba(216, 216, 216, 0.26);
+    height: 30%;
+    width: 2%;
+    left: 49%;
+    top: 20%;
+    transform-origin: 50% 100%;
+}
+
+#minute {
+    background: rgba(216, 216, 216, 0.26);
+    height: 45%;
+    width: 0.75%;
+    left: 49.625%;
+    top: 5%;
+    transform-origin: 50% 100%;
+}
+
+#trotteuse {
+    background: rgba(255, 0, 0, 0.322);
+    height: 55%;
+    width: 0.75%;
+    left: 49.625%;
+    top: 5%;
+    transform-origin: 50% 80%;
+}
