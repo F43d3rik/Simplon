@@ -23,8 +23,8 @@ h1 {
     width: 20em;
     height: 20em;
     margin: auto;
+    margin-top: 5%;
     border: 10px double rgba(216, 216, 216, 0.26);
-    ;
     border-radius: 50%;
 }
 
