@@ -17,7 +17,7 @@ main.appendChild(monImage);
 // Ajout de l'evennement onclick
 monImage.addEventListener('click', change);
 
-// On initialize l'Ã©tat
+// On initialize l'état
 let state = false;
 
 function change() {
