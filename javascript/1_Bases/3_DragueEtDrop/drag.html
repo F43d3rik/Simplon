@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="./drag.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Drag'n'Drop</h1>
+    <div id='goal' ondrop='drop_handler(event)' ondragover='dragover_handler(event)'></div>
+    <div id='ball' draggable='true' ondragstart='dragstart_handler(event)'></div>
+
+    <script src='./drag.js'></script>
+</body>
+
+</html>
