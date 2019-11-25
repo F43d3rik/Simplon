@@ -13,9 +13,7 @@ function dragover_handler(ev) {
 
 function drop_handler(ev) {
     ev.preventDefault();
-    ball.style.backgroundColor='purple';
-    var data = ev.dataTransfer.getData('ball');
+    ball.style.backgroundColor = 'purple';
+    let data = ev.dataTransfer.getData('ball');
     ev.target.appendChild(document.getElementById(data));
-
-
 };
